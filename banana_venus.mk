@@ -11,18 +11,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from venus device
 $(call inherit-product, device/xiaomi/venus/device.mk)
 
-# Inherit some common Evolution X stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
-
-EVO_BUILD_TYPE := OFFICIAL
+# Inherit some common BananaDroid stuff.
+$(call inherit-product, vendor/banana/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
-EXTRA_UDFPS_ANIMATIONS := true
+TARGET_EXCLUDE_MATLOG := true
+TARGET_HAS_UDFPS := true
+WITH_GAPPS := true
+
+BANANA_MAINTAINER := KamiKaonashi
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := venus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := M2011K2G
-PRODUCT_NAME := evolution_venus
+PRODUCT_NAME := banana_venus
 
 TARGET_BOOT_ANIMATION_RES := 1440
 

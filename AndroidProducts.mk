@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/banana_venus.mk
+    $(LOCAL_DIR)/lineage_venus.mk
 
 COMMON_LUNCH_CHOICES := \
-    banana_venus-user \
-    banana_venus-userdebug \
-    banana_venus-eng
+    lineage_venus-user \
+    lineage_venus-userdebug \
+    lineage_venus-eng

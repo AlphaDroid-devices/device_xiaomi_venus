@@ -11,14 +11,21 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from venus device
 $(call inherit-product, device/xiaomi/venus/device.mk)
 
-# Inherit some common BananaDroid stuff.
-$(call inherit-product, vendor/banana/config/common.mk)
+# Inherit some common Alphadroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_EXCLUDE_MATLOG := true
 TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 WITH_GAPPS := true
 
-BANANA_MAINTAINER := KamiKaonashi
+ALPHA_MAINTAINER := KamiKaonashi
+
+# Debugging Flags
+TARGET_INCLUDE_MATLOG := false
+TARGET_DEFAULT_ADB_ENABLED := false
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := venus

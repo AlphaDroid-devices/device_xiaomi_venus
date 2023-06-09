@@ -33,6 +33,10 @@ PRODUCT_PACKAGES += \
     SystemUIResVenus \
     WifiResVenus
 
+# Pixel Wallpapers (2021)
+PRODUCT_PACKAGES += \
+    PixelWallpapers2021
+
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.xiaomi

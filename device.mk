@@ -26,6 +26,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     ApertureResVenus \
     FrameworksResVenus \
+    NfcResVenus \
     SettingsOverlayM2011K2C \
     SettingsOverlayM2011K2G \
     SettingsProviderOverlayVenus \
